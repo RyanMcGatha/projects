@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <main>
+      <h1>Discover Your Sound</h1>
+      <p>Explore millions of tracks and playlists tailored to your taste</p>
+      <div class="phoneBox">
+        <img class="phone" src="phone.png" alt="Phone Image" />
+        <div class="form-box">
+          <form class="form">
+            <span class="title">Sign up</span>
+            <span class="subtitle">Create a free account with your email.</span>
+            <div class="form-container">
+              <input
+                type="text"
+                id="name"
+                class="inputN"
+                placeholder="Full Name"
+              />
+              <input
+                type="email"
+                id="email"
+                class="inputE"
+                placeholder="Email"
+              />
+              <input
+                type="password"
+                id="pass"
+                class="inputP"
+                placeholder="Password"
+              />
+            </div>
+            <button id="btn" class="subBtn" type="button">Sign up</button>
+          </form>
+          <div class="form-section">
+            <div class="acc">Have an account?<a href="">Log in</a></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      "use strict";
+
+      document.addEventListener("DOMContentLoaded", function () {
+        console.log("CONTENT LOADED");
+        const b = document.querySelector("#btn");
+
+        let usrStorage = {};
+
+        function createUsr() {
+          const n = document.querySelector("#name").value;
+          const e = document.querySelector("#email").value;
+          const p = document.querySelector("#pass").value;
+
+          usrStorage = {
+            usr: {
+              name: n,
+              email: e,
+              password: p,
+            },
+          };
+          window.open("home2.html", "_self");
+
+          localStorage.setItem("userInfo", JSON.stringify(usrStorage));
+          console.log(usrStorage);
+        }
+
+        b.addEventListener("click", createUsr);
+      });
+    </script>
+  </body>
+</html>

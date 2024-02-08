@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="moodRing">
+      <fieldset>
+        <legend>What is your mood today?</legend>
+        <label>
+          <input type="radio" name="mood" value="very-happy" />
+          Very Happy
+        </label>
+        <label>
+          <input type="radio" name="mood" value="happy" />
+          Happy
+        </label>
+        <label>
+          <input type="radio" name="mood" value="die" />
+          die
+        </label>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+    <p>
+      My Current Mood is: <span id="myMood" class="default-mood">not set</span>
+    </p>
+    <script src="js/index.js"></script>
+  </body>
+</html>

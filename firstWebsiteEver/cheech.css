@@ -1,0 +1,15 @@
+body {
+    width: 100vh;
+    height: 100vh;
+}
+#cheech {
+    height: 50vh;
+    width: auto;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,186 @@
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+  }
+
+  #navbar {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    z-index: 1;
+    scale: 150%;
+    gap: 200px;
+  }
+  
+  #navbar a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  #welcome-section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+  }
+  
+  #headshot {
+    margin-top: auto;
+    max-width: 100%;
+    height: auto;
+    height: 50%;
+    flex-grow: 1;
+  }
+
+  h1 {
+    display: flex;
+    font-size: 3em;
+    letter-spacing: 2px;
+    color: white;
+    margin-top: 50px;
+    flex-grow: 1;
+   }
+  
+  #profile-link {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    color: #333;
+  }
+  .projects-section {
+    height: 100vh;
+  }
+  .projects-section-header {
+    display: flex;
+    justify-content: center;
+    scale: 150%;
+    padding-top: 15px;
+    padding-bottom: 40px;
+
+  }
+  .projects-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  #tucker, #kelsey, #cheech {
+    max-width: 100%;
+    height: 65vh;
+    }
+  .project-tile, .project-tile-kelsey, .project-tile-cheech {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #333;
+
+
+  }
+
+  .title-tucker, .title-kelsey, .title-cheech{
+    font-size: 2.2em;
+  }
+  #profile-link {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+}
+  
+  @media screen and (min-width: 2560px) {
+    #navbar {
+      scale: 150%;
+    }
+  
+    #welcome-section {
+      display: flex;
+      flex-direction: row;
+      gap: 900px;
+      height: 100vh;
+    }
+
+    h1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transform: scale(2.5);
+      margin-left: 150px;
+      color: white;
+    }
+    .projects-section {
+      height: 1300px;
+    }
+    .projects-section-header {
+      display: flex;
+      justify-content: center;
+      scale: 150%;
+      padding-top: 15px;
+      padding-bottom: 40px;
+  
+    }
+    .projects-grid {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly
+    }
+    #tucker, #kelsey, #cheech {
+      max-width: 100%;
+      height: auto;
+      height: 900px;
+      }
+    .project-tile, .project-tile-kelsey, .project-tile-cheech {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 30px;
+  
+    }
+  
+    .title-tucker, .title-kelsey, .title-cheech{
+      font-size: 2.2em;
+    }
+    #profile-link {
+      display: flex;
+      justify-content: center;
+  
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .projects-grid {
+      flex-direction: column;
+    }
+    footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0px;
+      height: 1050px;
+    }
+    p {
+      background: #333;
+      color: white;
+      height: 25px;
+      margin: 0px;
+    }
+
+    .head {
+      max-width: 100%;
+    }
+  }
+
+
